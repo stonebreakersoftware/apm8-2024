@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Player</title>
+    <link rel="stylesheet" href="css/choose.css">
+</head>
+<body>
+    <div class="navigation">
+        <button onclick="setActive(this); window.location.href='choose.html';">Make a Selection</button>
+        <button onclick="setActive(this); window.location.href='draftboard.html';">Draftboard</button>
+        <button onclick="setActive(this); window.location.href='picks.html';">Your Picks</button>
+        <button onclick="setActive(this); window.location.href='hud.html';">Holistic View</button>
+    </div>
+    <hr> <!-- Visual divider -->
+    <div id="positionButtons">
+        <button class="posButton" onclick="filterPlayers('QB'); setActive(this);">QB</button>
+        <button class="posButton" onclick="filterPlayers('WR'); setActive(this);">WR</button>
+        <button class="posButton" onclick="filterPlayers('RB'); setActive(this);">RB</button>
+        <button class="posButton" onclick="filterPlayers('TE'); setActive(this);">TE</button>
+        <button class="posButton" onclick="filterPlayers('DEF'); setActive(this);">DEF</button>
+    </div>
+    <select id="playerDropdown"></select>
+    <button onclick="confirmSelection()">Confirm Selection</button>
+    
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="js/choose.js"></script>
+</body>
+</html>

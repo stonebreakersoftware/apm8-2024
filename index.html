@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Name</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Welcome to the Draft</h1>
+<!-- Inside your existing HTML where the dropdown is located -->
+<p>Please select your name:</p>
+<select id="playerDropdown" onchange="checkIfAdmin(this.value)">
+    <option value="">--Select Your Name--</option>
+    <!-- Options are populated dynamically -->
+</select>
+<input type="password" id="adminPassword" style="display: none;" placeholder="Enter password">
+<button onclick="savePlayerName()">Confirm</button>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

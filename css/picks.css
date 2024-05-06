@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Zebra striping for rows */
+#picksTable tr:nth-child(odd) {
+    background-color: #e0e0e0; /* Light gray for odd rows */
+}
+
+#picksTable tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+}
+
+
+.navigation {
+    margin-bottom: 20px;
+}
+
+.navigation button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigation button:hover,
+.navigation button.active { /* For active state */
+    background-color: #367c39; /* Darker green */
+}
+
+.posButton {
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.posButton:hover,
+.posButton.active { /* For active state */
+    background-color: #0056b3; /* Darker blue */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc; /* Light gray horizontal line */
+    margin: 20px 0;
+}

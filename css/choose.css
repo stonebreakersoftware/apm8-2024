@@ -1,0 +1,71 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Ensures a clean, modern font is used */
+    background-color: #f4f4f4; /* Light grey background for a neutral look */
+    padding: 20px; /* Adds padding around the content */
+    text-align: center; /* Center-aligns all content */
+}
+
+.navigation {
+    margin-bottom: 20px;
+}
+
+.navigation button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigation button:hover,
+.navigation button.active { /* For active state */
+    background-color: #367c39; /* Darker green */
+}
+
+.posButton {
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.posButton:hover,
+.posButton.active { /* For active state */
+    background-color: #0056b3; /* Darker blue */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc; /* Light gray horizontal line */
+    margin: 20px 0;
+}
+
+/* Dropdown styling */
+select {
+    padding: 10px; /* Padding to make the dropdown easier to interact with */
+    border-radius: 5px; /* Rounded corners to match the buttons */
+    border: 1px solid #ccc; /* Subtle border */
+    margin-top: 20px; /* Space above the dropdown */
+    width: 50%; /* Makes the dropdown significantly wider */
+    max-width: 300px; /* Limits the maximum width */
+    font-size: 16px; /* Larger font for ease of reading */
+    cursor: pointer; /* Indicates it is clickable */
+}
+
+/* Responsiveness: adjust button and dropdown sizes on smaller screens */
+@media (max-width: 600px) {
+    #positionButtons button,
+    select {
+        width: 90%; /* Makes buttons and dropdown almost full width */
+        font-size: 14px; /* Adjusts font size for smaller devices */
+    }
+}
