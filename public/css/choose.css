@@ -1,0 +1,46 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Ensures a clean, modern font is used */
+    background-color: #f4f4f4; /* Light grey background for a neutral look */
+    padding: 20px; /* Adds padding around the content */
+    text-align: center; /* Center-aligns all content */
+}
+
+/* Styling for position selection buttons */
+#positionButtons button {
+    background-color: #4CAF50; /* A nice, vibrant green */
+    color: white; /* White text contrasts well with the green */
+    border: none; /* No border for a cleaner look */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Comfortable padding within the buttons */
+    margin: 5px; /* Space between buttons */
+    font-size: 16px; /* Slightly larger font for better readability */
+    cursor: pointer; /* Changes cursor to indicate clickable items */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for buttons */
+#positionButtons button:hover {
+    background-color: #367c39; /* Darker shade of green on hover */
+}
+
+/* Dropdown styling */
+select {
+    padding: 10px; /* Padding to make the dropdown easier to interact with */
+    border-radius: 5px; /* Rounded corners to match the buttons */
+    border: 1px solid #ccc; /* Subtle border */
+    margin-top: 20px; /* Space above the dropdown */
+    width: 50%; /* Makes the dropdown significantly wider */
+    max-width: 300px; /* Limits the maximum width */
+    font-size: 16px; /* Larger font for ease of reading */
+    cursor: pointer; /* Indicates it is clickable */
+}
+
+/* Responsiveness: adjust button and dropdown sizes on smaller screens */
+@media (max-width: 600px) {
+    #positionButtons button,
+    select {
+        width: 90%; /* Makes buttons and dropdown almost full width */
+        font-size: 14px; /* Adjusts font size for smaller devices */
+    }
+}

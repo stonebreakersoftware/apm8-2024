@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUD - Fantasy Draft</title>
+    <link rel="stylesheet" href="css/hud.css">
+</head>
+<body>
+    <!-- Navigation Buttons -->
+    <div class="navigation">
+        <button onclick="window.location.href='choose.html';">Make a Selection</button>
+        <button onclick="window.location.href='draftboard.html';">Draftboard</button>
+        <button onclick="window.location.href='picks.html';">Your Picks</button>
+        <button onclick="window.location.href='hud.html';">Holistic View</button>
+    </div>
+
+    <!-- Draft Board Table -->
+    <h1>Draft Board</h1>
+    <table id="draftBoardTable">
+        <thead>
+            <tr>
+                <th>Round</th>
+                <th>Player Selected</th>
+                <th>Position</th>
+                <th>Team</th>
+                <th>Selected By</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be loaded dynamically -->
+        </tbody>
+    </table>
+    
+    <!-- Visual Divider -->
+    <hr>
+
+    <!-- Player Selection Controls -->
+    <h2>Make Your Pick</h2>
+    <div id="positionButtons">
+        <button>QB</button>
+        <button>WR</button>
+        <button>RB</button>
+        <button>TE</button>
+        <button>DEF</button>
+    </div>
+    <select id="playerDropdown"></select>
+    <button id="confirmSelection">Confirm Selection</button>
+
+    <!-- Another Divider -->
+    <hr>
+
+    <!-- Player's Picks Table -->
+    <h2>Your Draft Picks</h2>
+    <table id="picksTable">
+        <thead>
+            <tr>
+                <th>Round</th>
+                <th>Player Selected</th>
+                <th>Position</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be loaded dynamically -->
+        </tbody>
+    </table>
+
+    <button onclick="goToAdminPage()">Admin Panel</button>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="js/hud.js"></script> <!-- This will contain combined logic from other scripts -->
+</body>
+</html>

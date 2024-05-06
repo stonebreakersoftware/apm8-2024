@@ -1,0 +1,64 @@
+/* General body styling for overall page centering */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center; /* Centers text and inline-block/inline elements */
+}
+
+/* Ensuring that block-level table elements are centered */
+table {
+    width: 90%;
+    margin: 20px auto; /* Automatically centers the table */
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left; /* Ensures text within cells is left-aligned */
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Header styles for consistent appearance */
+h1, h2 {
+    text-align: center; /* Explicitly center-align headers */
+    color: #333;
+    font-size: 24px;
+}
+
+/* Navigation and buttons centered by text-align from body */
+.navigation, .navigation button, #confirmSelection {
+    display: inline-block; /* Inline-block elements respect text-align for centering */
+    margin: 5px;
+}
+
+.navigation button, #confirmSelection {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigation button:hover, #confirmSelection:hover {
+    background-color: #367c39;
+}
+
+/* Simple horizontal rule to visually separate sections */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    width: 90%; /* Matches table width */
+    margin: 20px auto; /* Centering hr */
+}
